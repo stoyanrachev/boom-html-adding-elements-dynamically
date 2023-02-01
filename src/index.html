@@ -15,21 +15,21 @@
       <button class="button">Boom?</button>
     </div>
     <script>
-document.addEventListener("click", addMessages);
+      document.addEventListener("click", addMessages);
 
-function addMessages() {
-for (let i = 1; i <= 5; i++) {
-var divMessage = createDivMessage();
-document.body.appendChild(divMessage);
-}
-}
+      function addMessages() {
+        for (let i = 1; i <= 5; i++) {
+          var divMessage = createDivMessage();
+          document.body.appendChild(divMessage);
+        }
+      }
 
-function createDivMessage(){
-var divMessage = document.createElement("div");
-divMessage.className  = 'message';
-divMessage.innerHTML = "<p>Hello Boom!</p>";
-return divMessage;
-}
-</script>
+      function createDivMessage() {
+        var divMessage = document.createElement("div");
+        divMessage.className = "message";
+        divMessage.innerHTML = "<p>Hello Boom!</p>";
+        return divMessage;
+      }
+    </script>
   </body>
 </html>
